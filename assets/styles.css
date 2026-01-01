@@ -98,7 +98,7 @@ body{
 #icon-search-long {
     width: 18px;
     height: 18px;
-    margin-right: -15px; 
+    margin-right: -4px; 
 }
 
 .navbar-item{
@@ -748,7 +748,7 @@ body{
     }
 
     .contact-1-right{
-        padding: 6px 0px 0px 69px;
+        padding: 6px 0px 0px 145px;
     }
 
     .input-form-right{
@@ -939,7 +939,7 @@ body{
         border-bottom: 1px solid #ccc;
         width: 100%;
         height: 65px;
-
+        line-height: 2.5;
      }
 
     .apply-author-mobile p {
