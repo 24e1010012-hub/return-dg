@@ -4,9 +4,6 @@
     padding: 0;
 }
 
-
-
-
 html, body{
     font-family: "Jost", sans-serif;
     font-optical-sizing: auto;
@@ -674,6 +671,14 @@ body{
         display: inline-block;
     }
 
+    .login-form {
+        padding-inline: 31%;
+    }
+
+    .input-form {
+        padding-inline: 31%;
+    }
+
     .login-content-form h2 {
         font-size: 18px;
     }
@@ -684,7 +689,7 @@ body{
     }
 
     .login-content-form a  {
-        margin-left: 242px;
+        margin-left: 322px;
     }
 
     .input-content-form h2{
@@ -702,7 +707,7 @@ body{
     }
 
     .input-content-form a{
-        margin-left: 242px;
+        margin-left: 322px;
     }
 
     .info-label-1 {
