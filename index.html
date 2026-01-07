@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return Authorrization Request</title>
+    <link rel="shortcut icon" href="assets/images/faviconV2-Photoroom.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <br id="main">   
+        <!-- Header -->
+        <div class="header">
+            <div class="header-content">
+                <nav class="navbar">
+                    <ul class="navbar-list1">
+                        <li class="navbar-item">Fashion</li>
+                        <li class="navbar-item">Beauty</li>
+                        <li class="navbar-item">Food&Beverage</li>
+                        <li class="navbar-item">World</li>
+                        <li class="navbar-item">Alta Moda</li>
+                        <li class="navbar-item">Sustainability</li>
+                        <li class="navbar-item">MY DG</li>
+                    </ul>
+    
+                    <ul class="navbar-list2">
+                        <svg style="cursor: pointer;" viewBox="0 0 20 20" id="icon-search-long" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="1.3"><path d="M13.5 13.5L20 20M13.197 13.197A7.35 7.35 0 102.803 2.803a7.35 7.35 0 0010.394 10.394z"></path></g></svg>
+                        <li class="navbar-item js-search-open">Search</li>
+                        <li class="navbar-item">Whishlist</li>
+                        <li class="navbar-item">Store Locator</li>
+                        <li class="navbar-item">Login</li>
+                        <svg style="cursor: pointer;" viewBox="0 0 27 32" id="icon-bag" xmlns="http://www.w3.org/2000/svg"><g><path d="M21.222 7.817V5.518c0-3.043-2.056-5.518-4.58-5.518h-6.336C7.782 0 5.727 2.475 5.727 5.518v2.299H0V32h26.947V7.817zM7.747 5.518c0-1.895 1.172-3.498 2.551-3.498h6.336c1.387 0 2.551 1.603 2.551 3.498v2.299H7.746zM24.926 29.98H2.022V9.839h22.906z"></path></g></svg>
+                    </ul>
+
+                    <!-- Modal Item-->
+                        <!-- Search -->    
+                    <div id="searchModal" class="modal-search-full">
+                        <div class="modal-search-container">
+                            <div id="closeSearch" class="close-search-btn">
+                                <svg viewBox="0 0 24 24" width="30" height="30" stroke="black" stroke-width="1.5" fill="none"><path d="M18 6L6 18M6 6l12 12"></path></svg>
+                            </div>
+
+                            <div class="modal-search-content">
+                                <div class="row-search-1">
+                                    <div class="logo-modal-search">
+                                        <svg style="cursor: pointer;" viewBox="0 0 165 16" xmlns="http://www.w3.org/2000/svg"><g><path d="M86.652 7.848h-7.265v1.837h4.812c-.26 3.11-2.477 4.1-5.12 4.289-3.326.235-5.969-2.616-6.039-5.843-.071-3.275 2.642-6.101 6.04-6.078 2.288.024 4.199 1.342 5.072 2.779l1.792-.941C85.072 1.699 82.194.074 79.08.003c-4.647-.117-8.47 3.652-8.398 8.128.071 4.406 3.846 7.94 8.398 7.868 6.772-.117 8.022-5.678 7.573-8.15zm39.516 1.532l2.028-5.278 2.03 5.278h-4.058zm1.274-8.882l-6.3 15.03h2.501l1.675-4.264h5.686l1.675 4.264h2.5L128.882.498h-1.44zM63.65 14.586c-.708 0-1.226-.495-1.226-1.201 0-.567.353-.896 1.014-1.344 0 0 .048-.023.095-.07.165.187 1.439 1.695 1.628 1.908-.542.471-1.015.707-1.51.707zm.401-5.678c.449 0 .732.26.732.66 0 .353-.212.66-.637.918 0 0-.118.071-.212.118a20.17 20.17 0 00-.377-.424.85.85 0 01-.236-.588c0-.4.306-.684.73-.684zm3.61 3.981l.071-.117-.78-.826s-.73.92-.895 1.132c-.212-.236-1.204-1.413-1.416-1.65.897-.564 1.298-1.154 1.298-1.884 0-1.036-.755-1.72-1.911-1.72-1.132 0-1.934.707-1.934 1.72 0 .518.165.942.542 1.344 0 0 .095.093.189.188-1.11.658-1.651 1.413-1.651 2.309 0 1.342.99 2.26 2.429 2.26.85 0 1.629-.33 2.288-.918.166.188.685.8.685.8h1.557s-1.204-1.413-1.369-1.601c.331-.283.637-.636.897-1.037zM90.38 9.38l2.03-5.278 2.03 5.278h-4.06zM91.654.498l-6.3 15.03h2.502l1.675-4.264h5.684l1.677 4.264h2.5l-6.3-15.03h-1.438zm12.315 13.24h-1.393V8.625h1.463c1.581 0 3.963.048 3.963 2.474.024 2.239-1.863 2.663-4.033 2.639zm-1.393-11.403h.378c1.817-.047 3.798-.14 3.798 2.12 0 2.31-1.864 2.286-3.82 2.333h-.356V2.335zm4.884 5.042c1.014-.684 1.651-1.556 1.651-2.757.048-3.486-2.335-4.028-4.789-4.098h-4.199v15.03h4.86c3.09 0 5.331-1.06 5.497-4.053.118-1.814-1.228-3.698-3.02-4.122zm40.553 4.334L137.491.498h-1.461v15.03h2.217V4.526l10.308 11.002h1.653V.498h-2.195v11.213zm-32.673 2.027h-1.393V8.625h1.463c1.581 0 3.963.048 3.963 2.474.024 2.239-1.84 2.663-4.033 2.639zm-1.393-11.403h.378c1.817-.047 3.798-.14 3.798 2.12 0 2.31-1.864 2.286-3.82 2.333h-.356V2.335zm4.884 5.042c1.014-.684 1.651-1.556 1.651-2.757.048-3.486-2.335-4.028-4.789-4.098h-4.199v15.03h4.86c3.09 0 5.331-1.06 5.497-4.053.118-1.814-1.204-3.698-3.02-4.122zM32.722.498h-2.265l-.023 15.03h6.535V13.69h-4.247V.5zM155.964 9.38l2.029-5.278 2.03 5.278h-4.059zm2.76-8.882h-1.486l-6.3 15.03h2.502l1.675-4.264h5.686l1.697 4.264H165L158.725.498zM25.717 12.183a6.077 6.077 0 01-4.27 1.719 6.035 6.035 0 01-4.27-1.719c-1.157-1.131-1.77-2.544-1.77-4.123 0-1.578.613-3.039 1.77-4.17 1.131-1.108 2.642-1.696 4.27-1.696 1.628 0 3.113.588 4.27 1.696a5.68 5.68 0 011.77 4.17c.022 1.579-.615 2.992-1.77 4.123zm1.675-9.73C25.81.97 23.664.168 21.469.168c-2.217 0-4.34.825-5.898 2.285a7.525 7.525 0 00-2.453 5.607c0 2.144.85 4.076 2.453 5.584 1.581 1.484 3.705 2.309 5.898 2.309 2.195 0 4.342-.825 5.922-2.31 1.58-1.483 2.429-3.44 2.429-5.583 0-2.167-.826-4.123-2.43-5.607zM43.716.027c-1.18.023-1.864.212-2.95.66-3.42 1.46-5.189 4.358-4.86 7.962.284 3.157 1.888 5.301 4.86 6.62 1.063.471 1.747.66 2.926.707 1.203.07 1.935-.024 3.066-.425.873-.306 1.393-.495 2.102-1.083v-2.073s-1.229.824-2.102 1.153c-1.131.402-1.863.567-3.066.424-1.227-.14-1.935-.424-2.925-1.106-.826-.566-1.25-.99-1.746-1.837-.471-.826-.59-1.367-.661-2.309-.189-2.308.472-4.076 2.407-5.465.99-.707 1.698-.99 2.925-1.108 1.203-.118 1.935.048 3.066.448.873.305 1.322.636 2.102 1.106V1.723c-.661-.565-.921-.707-2.102-1.177a7.251 7.251 0 00-3.042-.52zm5.827 15.501h7.785v-1.813h-5.426v-5.16h5.285V6.74h-5.285V2.336h5.426V.498h-7.785v15.03zM9.98 8.413c-.117 3.063-2.312 5.253-5.285 5.253H2.407V2.43l2.312.024C7.88 2.5 10.121 5.09 9.98 8.413zM4.72.52H0v15.006h4.72c4.953 0 7.808-3.533 7.69-7.703C12.291 3.796 9.153.521 4.72.521z" fill-rule="evenodd"></path></g></svg>
+                                    </div>
+                                    <div class="input-modal-search">
+                                        <div class="input-item-search">
+                                            <svg style="cursor: pointer; width:15px; z-index: 1" viewBox="0 0 20 20" id="icon-search-long" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="1.3"><path d="M13.5 13.5L20 20M13.197 13.197A7.35 7.35 0 102.803 2.803a7.35 7.35 0 0010.394 10.394z"></path></g></svg>
+                                            <input type="text" placeholder="Product search...">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row-2-container">
+                                    <div class="gifts-card"></div>
+                                    <div class="row-search-2">
+                                        <div class="gifts-card">
+                                            <img src="assets/images/banner-search-1.webp" alt="">
+                                            <a href="#" onclick="return false" >Small Gifts Women</a>
+                                        </div>
+                                        <div class="gifts-card">
+                                            <img src="assets/images/banner-search-2.webp" alt="">
+                                            <a href="#" onclick="return false">Casa Gifts</a>
+                                        </div>
+                                        <div class="gifts-card">
+                                            <img src="assets/images/banner-search-3.webp" alt="">
+                                            <a href="#" onclick="return false">Beauty Gifts</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                        <!-- Bag -->
+                    <div class="modal-bag-shopping" id="bagModal">
+                        <div class="modal-bag-content">
+                            <span id="closeBag" style="cursor: pointer; font-size: 24px;position: absolute; right: 10px; top: 10px; padding: 5px; z-index: 99;">&times;</span>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <h3 style="margin: 0; font-size: 16px;font-weight: 100; letter-spacing: 2px; font-family: Arial, Helvetica, sans-serif;">SHOPPING BAG <sup>0</sup></h3>
+                            </div>
+                            <div style="margin-top: 80px; text-align: center;">
+                                <p style="font-size: 13px; font-weight: 100; font-family: Arial, Helvetica, sans-serif;">YOUR BAG IS EMPTY</p>
+                            </div>
+                            <div style="margin-top: 635px;">
+                            <div class="bag-footer">
+                                <h2>RETRIEVE YOUR BAG</h2>
+                                <p>Sign in to My Account to access your bag across your device.</p>
+                                <a href="#" onclick="return false">Login</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </nav>
+
+                <div class="header-logo">
+                    <svg viewBox="0 0 165 16" class="my-logo-1">
+                        <g id="logo-content-1" fill="#000"> 
+                            <path d="M86.652 7.848h-7.265v1.837h4.812c-.26 3.11-2.477 4.1-5.12 4.289-3.326.235-5.969-2.616-6.039-5.843-.071-3.275 2.642-6.101 6.04-6.078 2.288.024 4.199 1.342 5.072 2.779l1.792-.941C85.072 1.699 82.194.074 79.08.003c-4.647-.117-8.47 3.652-8.398 8.128.071 4.406 3.846 7.94 8.398 7.868 6.772-.117 8.022-5.678 7.573-8.15zm39.516 1.532l2.028-5.278 2.03 5.278h-4.058zm1.274-8.882l-6.3 15.03h2.501l1.675-4.264h5.686l1.675 4.264h2.5L128.882.498h-1.44zM63.65 14.586c-.708 0-1.226-.495-1.226-1.201 0-.567.353-.896 1.014-1.344 0 0 .048-.023.095-.07.165.187 1.439 1.695 1.628 1.908-.542.471-1.015.707-1.51.707zm.401-5.678c.449 0 .732.26.732.66 0 .353-.212.66-.637.918 0 0-.118.071-.212.118a20.17 20.17 0 00-.377-.424.85.85 0 01-.236-.588c0-.4.306-.684.73-.684zm3.61 3.981l.071-.117-.78-.826s-.73.92-.895 1.132c-.212-.236-1.204-1.413-1.416-1.65.897-.564 1.298-1.154 1.298-1.884 0-1.036-.755-1.72-1.911-1.72-1.132 0-1.934.707-1.934 1.72 0 .518.165.942.542 1.344 0 0 .095.093.189.188-1.11.658-1.651 1.413-1.651 2.309 0 1.342.99 2.26 2.429 2.26.85 0 1.629-.33 2.288-.918.166.188.685.8.685.8h1.557s-1.204-1.413-1.369-1.601c.331-.283.637-.636.897-1.037zM90.38 9.38l2.03-5.278 2.03 5.278h-4.06zM91.654.498l-6.3 15.03h2.502l1.675-4.264h5.684l1.677 4.264h2.5l-6.3-15.03h-1.438zm12.315 13.24h-1.393V8.625h1.463c1.581 0 3.963.048 3.963 2.474.024 2.239-1.863 2.663-4.033 2.639zm-1.393-11.403h.378c1.817-.047 3.798-.14 3.798 2.12 0 2.31-1.864 2.286-3.82 2.333h-.356V2.335zm4.884 5.042c1.014-.684 1.651-1.556 1.651-2.757.048-3.486-2.335-4.028-4.789-4.098h-4.199v15.03h4.86c3.09 0 5.331-1.06 5.497-4.053.118-1.814-1.228-3.698-3.02-4.122zm40.553 4.334L137.491.498h-1.461v15.03h2.217V4.526l10.308 11.002h1.653V.498h-2.195v11.213zm-32.673 2.027h-1.393V8.625h1.463c1.581 0 3.963.048 3.963 2.474.024 2.239-1.84 2.663-4.033 2.639zm-1.393-11.403h.378c1.817-.047 3.798-.14 3.798 2.12 0 2.31-1.864 2.286-3.82 2.333h-.356V2.335zm4.884 5.042c1.014-.684 1.651-1.556 1.651-2.757.048-3.486-2.335-4.028-4.789-4.098h-4.199v15.03h4.86c3.09 0 5.331-1.06 5.497-4.053.118-1.814-1.204-3.698-3.02-4.122zM32.722.498h-2.265l-.023 15.03h6.535V13.69h-4.247V.5zM155.964 9.38l2.029-5.278 2.03 5.278h-4.059zm2.76-8.882h-1.486l-6.3 15.03h2.502l1.675-4.264h5.686l1.697 4.264H165L158.725.498zM25.717 12.183a6.077 6.077 0 01-4.27 1.719 6.035 6.035 0 01-4.27-1.719c-1.157-1.131-1.77-2.544-1.77-4.123 0-1.578.613-3.039 1.77-4.17 1.131-1.108 2.642-1.696 4.27-1.696 1.628 0 3.113.588 4.27 1.696a5.68 5.68 0 011.77 4.17c.022 1.579-.615 2.992-1.77 4.123zm1.675-9.73C25.81.97 23.664.168 21.469.168c-2.217 0-4.34.825-5.898 2.285a7.525 7.525 0 00-2.453 5.607c0 2.144.85 4.076 2.453 5.584 1.581 1.484 3.705 2.309 5.898 2.309 2.195 0 4.342-.825 5.922-2.31 1.58-1.483 2.429-3.44 2.429-5.583 0-2.167-.826-4.123-2.43-5.607zM43.716.027c-1.18.023-1.864.212-2.95.66-3.42 1.46-5.189 4.358-4.86 7.962.284 3.157 1.888 5.301 4.86 6.62 1.063.471 1.747.66 2.926.707 1.203.07 1.935-.024 3.066-.425.873-.306 1.393-.495 2.102-1.083v-2.073s-1.229.824-2.102 1.153c-1.131.402-1.863.567-3.066.424-1.227-.14-1.935-.424-2.925-1.106-.826-.566-1.25-.99-1.746-1.837-.471-.826-.59-1.367-.661-2.309-.189-2.308.472-4.076 2.407-5.465.99-.707 1.698-.99 2.925-1.108 1.203-.118 1.935.048 3.066.448.873.305 1.322.636 2.102 1.106V1.723c-.661-.565-.921-.707-2.102-1.177a7.251 7.251 0 00-3.042-.52zm5.827 15.501h7.785v-1.813h-5.426v-5.16h5.285V6.74h-5.285V2.336h5.426V.498h-7.785v15.03zM9.98 8.413c-.117 3.063-2.312 5.253-5.285 5.253H2.407V2.43l2.312.024C7.88 2.5 10.121 5.09 9.98 8.413zM4.72.52H0v15.006h4.72c4.953 0 7.808-3.533 7.69-7.703C12.291 3.796 9.153.521 4.72.521z" fill-rule="evenodd"></path>
+                        </g>
+                    </svg>
+                    <img src="assets/images/faviconV2-Photoroom.png" alt="">             
+                </div>
+
+                <div class="header-service">
+                    <a href="#" onclick="return false;"> HOLIDAY GIFTS</a>
+                    <a href="#" onclick="return false;"> NEW IN</a>
+                    <a href="#" onclick="return false;"> WOMEN</a>
+                    <a href="#" onclick="return false;"> MEN</a>
+                    <a href="#" onclick="return false;"> CHILDREND</a>
+                    <a href="#" onclick="return false;"> BAGS</a>
+                    <a href="#" onclick="return false;"> WATCHES & JEWELRY</a>
+                    <a href="#" onclick="return false;"> MY DG</a>
+                </div>
+              </div>
+        </div>
+        <div class="header-tablet">
+            <img src="assets/images/50x140.png" alt="">
+            <div class="service-menu-tablet">
+                <div class="menu-tablet-icon">
+                    <svg style="cursor: pointer;" viewBox="0 0 20 20" id="icon-search-long" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="1.3"><path d="M13.5 13.5L20 20M13.197 13.197A7.35 7.35 0 102.803 2.803a7.35 7.35 0 0010.394 10.394z"></path></g></svg>
+                    <svg style="cursor: pointer;" fill="none" viewBox="0 0 21 21" id="icon-wishlist-add-service-menu" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" stroke="currentColor" stroke-width=".3" d="M6.332 1.86a5.9 5.9 0 00-5.204 4.22c-.19.662-.218.866-.214 1.692 0 .663.01.813.078 1.122a6.04 6.04 0 001.302 2.703c.143.166 2.074 2.118 4.29 4.334l3.7 3.749c.26.228.448.227.738-.011l1.62-1.7 2.135-2.174c2.645-2.648 4.232-4.263 4.361-4.436a6 6 0 001.078-2.332 5.94 5.94 0 00-.898-4.634 6.4 6.4 0 00-1.1-1.207c-1.65-1.346-3.875-1.728-5.862-.968-.557.213-.932.568-1.164.786-.594.566-.552.496-1.157-.009-.629-.51-1.173-.856-2.037-1.036-.272-.054-1.159-.146-1.275-.132-.017.003-.193.017-.39.034zm1.528 1.1c.938.221 1.44.745 2.186 1.404.459.404.702.363 1.159-.061.713-.663 1.253-1.219 2.198-1.433.31-.068.45-.078 1.037-.078.758 0 .993.034 1.612.241a4.95 4.95 0 013.11 3.108c.184.557.228.812.248 1.444.014.486.007.643-.05.986a5 5 0 01-.793 1.992c-.187.282-.656.769-4.08 4.195l-3.454 3.463c-.342.363-.41.39-.801.01l-3.393-3.37c-2.675-2.676-3.845-3.87-4.018-4.097a4.95 4.95 0 01-.959-2.346C1.495 5.74 3.334 3.265 6.016 2.826c.47-.078 1.385.029 1.844.134z"></path></g></svg>
+                    <svg style="cursor: pointer;" viewBox="0 0 27 32" id="icon-user" xmlns="http://www.w3.org/2000/svg"><g><path d="M14.32 2.02a3.666 3.666 0 013.663 3.661v2.2a3.667 3.667 0 01-3.662 3.667h-1.716a3.666 3.666 0 01-3.661-3.666V5.68a3.666 3.666 0 013.661-3.661zm0-2.02h-1.716a5.681 5.681 0 00-5.681 5.681v2.202a5.681 5.681 0 005.681 5.681h1.716a5.683 5.683 0 005.683-5.683v-2.2A5.683 5.683 0 0014.32 0zm12.603 32h-2.026v-4.316c-.007-5.52-4.479-9.993-9.998-10.001H12.02c-5.52.007-9.993 4.48-9.999 10V32H.001v-4.316c.008-6.635 5.384-12.012 12.019-12.021h2.885c6.635.009 12.012 5.386 12.02 12.02v.001z"></path></g></svg>
+                    <svg style="cursor: pointer;" viewBox="0 0 27 32" id="icon-bag" xmlns="http://www.w3.org/2000/svg"><g><path d="M21.222 7.817V5.518c0-3.043-2.056-5.518-4.58-5.518h-6.336C7.782 0 5.727 2.475 5.727 5.518v2.299H0V32h26.947V7.817zM7.747 5.518c0-1.895 1.172-3.498 2.551-3.498h6.336c1.387 0 2.551 1.603 2.551 3.498v2.299H7.746zM24.926 29.98H2.022V9.839h22.906z"></path></g></svg>
+                    <svg style="cursor: pointer;" viewBox="0 0 1181.482 1109.524" id="icon-burger" xmlns="http://www.w3.org/2000/svg"><g><path d="M1140.262 572.73H41.22C18.455 572.73 0 554.273 0 531.51s18.455-41.22 41.22-41.22h1099.042c22.765 0 41.22 18.454 41.22 41.22s-18.455 41.22-41.22 41.22zm0-472.253H41.22C18.455 100.477 0 82.022 0 59.257s18.455-41.22 41.22-41.22h1099.042c22.765 0 41.22 18.455 41.22 41.22s-18.455 41.22-41.22 41.22zm0 944.565H41.22c-22.765 0-41.22-18.455-41.22-41.22s18.455-41.22 41.22-41.22h1099.042c22.765 0 41.22 18.455 41.22 41.22s-18.455 41.22-41.22 41.22z"></path></g></svg>
+                </div>
+            </div>
+        </div> 
+        <div class="header-mobile">
+            <img src="assets/images/50x140.png" alt="">
+            <div class="service-menu-mobile">
+                <div class="menu-mobile-icon">
+                    <svg style="cursor: pointer;" viewBox="0 0 20 20" id="icon-search-long" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="1.3"><path d="M13.5 13.5L20 20M13.197 13.197A7.35 7.35 0 102.803 2.803a7.35 7.35 0 0010.394 10.394z"></path></g></svg>
+                    <svg style="cursor: pointer;" fill="none" viewBox="0 0 21 21" id="icon-wishlist-add-service-menu" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" stroke="currentColor" stroke-width=".3" d="M6.332 1.86a5.9 5.9 0 00-5.204 4.22c-.19.662-.218.866-.214 1.692 0 .663.01.813.078 1.122a6.04 6.04 0 001.302 2.703c.143.166 2.074 2.118 4.29 4.334l3.7 3.749c.26.228.448.227.738-.011l1.62-1.7 2.135-2.174c2.645-2.648 4.232-4.263 4.361-4.436a6 6 0 001.078-2.332 5.94 5.94 0 00-.898-4.634 6.4 6.4 0 00-1.1-1.207c-1.65-1.346-3.875-1.728-5.862-.968-.557.213-.932.568-1.164.786-.594.566-.552.496-1.157-.009-.629-.51-1.173-.856-2.037-1.036-.272-.054-1.159-.146-1.275-.132-.017.003-.193.017-.39.034zm1.528 1.1c.938.221 1.44.745 2.186 1.404.459.404.702.363 1.159-.061.713-.663 1.253-1.219 2.198-1.433.31-.068.45-.078 1.037-.078.758 0 .993.034 1.612.241a4.95 4.95 0 013.11 3.108c.184.557.228.812.248 1.444.014.486.007.643-.05.986a5 5 0 01-.793 1.992c-.187.282-.656.769-4.08 4.195l-3.454 3.463c-.342.363-.41.39-.801.01l-3.393-3.37c-2.675-2.676-3.845-3.87-4.018-4.097a4.95 4.95 0 01-.959-2.346C1.495 5.74 3.334 3.265 6.016 2.826c.47-.078 1.385.029 1.844.134z"></path></g></svg>
+                    <svg style="cursor: pointer;" viewBox="0 0 27 32" id="icon-user" xmlns="http://www.w3.org/2000/svg"><g><path d="M14.32 2.02a3.666 3.666 0 013.663 3.661v2.2a3.667 3.667 0 01-3.662 3.667h-1.716a3.666 3.666 0 01-3.661-3.666V5.68a3.666 3.666 0 013.661-3.661zm0-2.02h-1.716a5.681 5.681 0 00-5.681 5.681v2.202a5.681 5.681 0 005.681 5.681h1.716a5.683 5.683 0 005.683-5.683v-2.2A5.683 5.683 0 0014.32 0zm12.603 32h-2.026v-4.316c-.007-5.52-4.479-9.993-9.998-10.001H12.02c-5.52.007-9.993 4.48-9.999 10V32H.001v-4.316c.008-6.635 5.384-12.012 12.019-12.021h2.885c6.635.009 12.012 5.386 12.02 12.02v.001z"></path></g></svg>
+                    <svg style="cursor: pointer;" viewBox="0 0 27 32" id="icon-bag" xmlns="http://www.w3.org/2000/svg"><g><path d="M21.222 7.817V5.518c0-3.043-2.056-5.518-4.58-5.518h-6.336C7.782 0 5.727 2.475 5.727 5.518v2.299H0V32h26.947V7.817zM7.747 5.518c0-1.895 1.172-3.498 2.551-3.498h6.336c1.387 0 2.551 1.603 2.551 3.498v2.299H7.746zM24.926 29.98H2.022V9.839h22.906z"></path></g></svg>
+                    <svg style="cursor: pointer;" viewBox="0 0 1181.482 1109.524" id="icon-burger" xmlns="http://www.w3.org/2000/svg"><g><path d="M1140.262 572.73H41.22C18.455 572.73 0 554.273 0 531.51s18.455-41.22 41.22-41.22h1099.042c22.765 0 41.22 18.454 41.22 41.22s-18.455 41.22-41.22 41.22zm0-472.253H41.22C18.455 100.477 0 82.022 0 59.257s18.455-41.22 41.22-41.22h1099.042c22.765 0 41.22 18.455 41.22 41.22s-18.455 41.22-41.22 41.22zm0 944.565H41.22c-22.765 0-41.22-18.455-41.22-41.22s18.455-41.22 41.22-41.22h1099.042c22.765 0 41.22 18.455 41.22 41.22s-18.455 41.22-41.22 41.22z"></path></g></svg>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Container -->
+        <div class="container">
+            <h1 class="container-heading">WHAT TO DO AFTER REQUESTING THE <br class="br-mobile"> RETURN?</h1>
+            <div class="heading-icon-card">
+                <div class="icon-card">
+                    <div class="img-card">
+                        <img src="assets/images/ran_step_1.webp" alt="">
+                    </div>
+                    <h3 class="icon-h3" >1. SEND A RETURN <br class="br-mobile"> <br class="br-tablet">  <br> AUTHORIZATION REQUEST</h3>
+                    <p class="icon-p">Fill in and send the <br class="br-tablet"> Return <br class="br-mobile"> <br> Proforma <br class="br-tablet"> Invoice and place <br> it <br class="br-mobile"> <br class="br-tablet"> inside your package.</p>
+                </div>
+                <div class="icon-card">
+                    <div class="img-card">
+                        <img src="assets/images/ran_step_2.webp" alt="">
+                    </div>
+                    <h3 class="icon-h3">2. ATTACH THE RETURN <br class="br-tablet"> LABEL</h3>
+                    <p class="icon-p">You can find it in the <br class="br-tablet">  <br> original <br class="br-mobile"> package. <br class="br-tablet"> Not <br> there? Check <br class="br-mobile"> the <br class="br-tablet"> "New <br> Return Label" <br class="br-mobile"> <br class="br-tablet"> section</p>
+                </div>
+                <div class="icon-card">
+                    <div class="img-card">
+                        <img src="assets/images/ran_step_3.webp" alt="">
+                    </div>
+                    <h3 class="icon-h3">3. CALL THE COURIER</h3>
+                    <p class="icon-p">Contact the courier <br class="br-tablet"> <br> indicated <br class="br-mobile"> on the <br class="br-tablet"> return label <br> in the <br class="br-mobile"> <br class="br-tablet"> ways noted in the <br class="br-tablet"> <br> "How to <br class="br-mobile"> book a <br class="br-tablet"> pickup?"</p>
+                </div>
+                <div class="icon-card">
+                    <div class="img-card">
+                        <img src="assets/images/ran_step_4.webp" alt="">
+                    </div>
+                    <h3 class="icon-h3" >4. SHIPPING</h3>
+                    <p class="icon-p">Wait for courier <br class="br-tablet"> pickup or <br class="br-mobile"> <br> bring your <br class="br-tablet"> package to the <br class="br-mobile"> <br class="br-tablet"> <br> collection center</p>
+                </div>
+            </div>
+
+            <div class="login-author-mobile">
+                <h2>Return Authorization</h2>
+                <p>Do you already have an account? Login to view the return authorizations that are possible for your orders.</p>
+                <a href="#" onclick="return false">Login</a>
+            </div>
+            <div class="apply-author-mobile">
+                <h2>Return Authorization for unregistered customers</h2>
+                <p>Please use this form, if you don't have a user account.</p>
+                <form action="" class="apply-form-mobile" >
+                    <div class="oder-number-mobile">
+                        <span>Oder Number*</span>
+                        <input type="text">
+                    </div>
+                    <div class="email-mobile">
+                        <span>Email*</span>
+                        <input type="text" style="caret-color: #000;">
+                        <a class="email-mobile-btn" href="#" onclick="return false">Apply</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Form -->
+        <div class="form-1">
+            <div class="login-form">
+                <div class="login-content-form">
+                    <h2>Return Authorization</h2>
+                    <p>Do you already have an account? Login to view the  <br class="br-tablet">  return <br> authorizations that are possible for your orders.</p>
+                        <a href="#" onclick="return false;">Login</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-2">
+            <div class="input-form">
+                <div class="input-content-form">
+                    <h2>Return Authorization for <br class="br-mobile"> unregistered customers</h2>
+                    <p>Please use this form, if you don't have a user account.</p>
+                    <div class="input-info-form">
+                        <label class="info-label-1" for="">
+                            <span>Order Number*</span>
+                            <input class="number-input" type="text">
+                        </label>
+
+                        <label class="info-label-2" for="">
+                            <span>Email*</span>
+                            <input class="email-input" type="email">
+                        </label>
+                    </div>
+
+                    <a href="#" onclick="return false;">Apply</a>
+                        
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-logo">
+                <img class="img-footer-logo" src="assets/images/footer-logo-white.svg" alt="">
+            </div>
+            <div class="footer-contact-1">
+                <div class="contact-1-left">
+                    <h4 style="color: #fff; font-weight: 400; width: 330px; font-size: 13px; height: 30px; line-height: 2;" >STORE LOCATOR</h4>
+                    <p style="color: #fff; font-weight: 400; font-size: 13px; margin-bottom: 4px;">Enter a location to find the nearest DG Stores</p>
+                    <div class="locate-input">
+                        <input type="text" placeholder="Search by city or postcode" style="border: none; background-color: #000; outline: none; caret-color: #fff; color: #fff;" >
+                        <span style=" font-size: 12px !important; font-weight: 400; color: #fff; line-height: 2.5; cursor: pointer;" >Search </span>
+                    </div>
+                </div>
+                <div class="contact-1-right">
+                    <h4 style="color: #fff; font-weight: 400; font-size: 13px; ">SUBSCRIBE TO NEWSLETTER</h4>
+                    <div class="newsletter-input">
+                        <div class="input-form-right">
+                            <input type="email" placeholder="Insert your email" style="border: none; background-color: #000; outline: none; caret-color: #fff; color: #fff; width:100%" >
+                            <span style=" font-size: 12px !important; font-weight: 400; color: #fff; line-height: 2.5; cursor: pointer;">Confirm</span>
+                        </div>
+                        <div class="mark-span">
+                            <input type="checkbox" style="accent-color: #ffffff; width: 14px; height: 14px; filter: invert(1) hue-rotate(180deg) brightness(1.5); ">
+                            <span style=" font-size: 13px; font-weight: 400; color: #fff;" >I declare that I have read the <a href="#" onclick="return false;" style="color: #fff;" >Privacy Policy</a>.* </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-contact-mobile">
+                    <a href="#" onclick="return false">SERVICES</a>
+                    <a href="#" onclick="return false">ODER TRACKING</a>
+                    <a href="#" onclick="return false">RETURNS</a>
+                    <div class="cus-care">
+                        <a href="#" onclick="return false">CUSTOMER CARE</a>
+                        <p>+</p>
+                    </div>
+                    <div class="legal-area">
+                        <a href="#" onclick="return false"> LEGAL AREA</a>
+                        <p>+</p>
+                    </div>
+                    <div class="corporate">
+                        <a href="#" onclick="return false">CORPORATE</a>
+                        <p>+</p>
+                    </div>
+                    <div class="follow-us">
+                        <a href="#" onclick="return false">FOLLOW US</a>
+                        <p>+</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="footer-contact-2">
+                <div class="contact-2-left">    
+                    <a href="#" onclick="return false;">ORDER TRACKING</a>
+                    <a href="#" onclick="return false;">RETURNS</a>
+                    <a href="#" onclick="return false;">CUSTOMER CARE &nbsp;+ </a>
+                    <a href="#" onclick="return false;">LEGAL AREA &nbsp;+ </a>
+                    <a href="#" onclick="return false;">CORPORATE &nbsp;+ </a>
+                    <a href="#" onclick="return false;">FOLLOW US &nbsp;+ </a>
+                </div>
+                <div class="contact-2-right">
+                    <span style="cursor: pointer;" >COUNTRY & LANGUAGE</span>
+                    <span style="cursor: pointer;" >Vietnam / English</span>
+                </div>
+            </div>
+            <!-- Sub Layout -->
+            <div class="flyout-country-language">
+                <div class="sub-country-language">
+                    <span style="color: #fff;margin-right: 15px; font-size: 14px;" >COUNTRY & LANGUAGE</span>
+                    <span style="color: #fff;font-size: 13px;"> Vietnam / English</span>
+                </div>
+            </div>
+
+            <div class="deep-footer-mobile">
+                <p>Site – managed by The Level S.r.l – Copyright © Dolce & Gabbana S.r.l. 2025 – All rights reserved – any reproduction of the contents is strictly forbidden. </p>
+            </div>
+
+            <div class="deep-footer">
+                <p style="color: #fff; font-size: 8.1px; display: inline-block; line-height: 3;" >Site – managed by The Level S.r.l – Copyright © Dolce & Gabbana S.r.l. 2025 – All rights reserved – any reproduction of the contents is strictly forbidden.</p>
+            </div>
+        </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
