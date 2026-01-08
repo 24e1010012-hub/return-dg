@@ -4,8 +4,30 @@
     padding: 0;
 }
 
-html, body{
-    font-family: "Jost", sans-serif;
+@font-face {
+    font-family: 'FuturaLTPro'; 
+    src: url('fonts/FuturaLTProBook.otf') format('opentype'); /* Sửa thành opentype */
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaLTPro'; 
+    src: url('fonts/FuturaLTProMedium.otf') format('opentype'); /* Sửa thành opentype */
+    font-weight: 500;
+    font-style: normal;
+}
+
+h1, h2, .header {
+    font-weight: 600; 
+}
+
+p,a,li{
+    font-weight: 100;
+}
+
+html, body{                 
+    font-family: 'FuturaLTPro', sans-serif;               
     font-optical-sizing: auto;
     font-style: normal;
 }
@@ -402,7 +424,7 @@ body{
 }
 
 .contact-1-right{
-    padding: 6px 0px 0px 92px;
+    padding: 6px 0px 0px 102px;
     width: 464px;
     height: 205px;
     word-spacing: 1.6px;
@@ -672,11 +694,11 @@ body{
     }
 
     .login-form {
-        padding-inline: 31%;
+        padding-inline: 23%;
     }
 
     .input-form {
-        padding-inline: 31%;
+        padding-inline: 23%;
     }
 
     .login-content-form h2 {
@@ -753,7 +775,7 @@ body{
     }
 
     .contact-1-right{
-        padding: 6px 0px 0px 145px;
+        padding: 6px 0px 0px 62px;
     }
 
     .input-form-right{
@@ -938,13 +960,14 @@ body{
     .apply-author-mobile h2{
         padding: 8px 36px 8px 36px;
         text-align: center;
-        font-size: 20px;
-        font-weight: 100;
+        font-size: 16px;
+        font-weight: 600;
         border-top: 1px solid #ccc;
         border-bottom: 1px solid #ccc;
         width: 100%;
-        height: 65px;
-        line-height: 2.5;
+        height: 62px;
+        line-height: 1.5;
+        overflow: hidden;   
      }
 
     .apply-author-mobile p {
