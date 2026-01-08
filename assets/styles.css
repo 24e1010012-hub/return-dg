@@ -775,7 +775,7 @@ body{
     }
 
     .contact-1-right{
-        padding: 6px 0px 0px 62px;
+        padding: 6px 0px 0px 145px;
     }
 
     .input-form-right{
@@ -960,12 +960,12 @@ body{
     .apply-author-mobile h2{
         padding: 8px 36px 8px 36px;
         text-align: center;
-        font-size: 16px;
-        font-weight: 600;
+        font-size: 21px;
+        font-weight: 500;
         border-top: 1px solid #ccc;
         border-bottom: 1px solid #ccc;
         width: 100%;
-        height: 62px;
+        height: 48px;
         line-height: 1.5;
         overflow: hidden;   
      }
